@@ -1,0 +1,22 @@
+services:
+  ct-server:
+    build: .
+    image: caveman-tokenstransfer-server:2.0.0
+    container_name: ct-server
+    ports:
+      - "8080:8080"
+    environment:
+      - LLMLINGUA_DEVICE=cpu
+      - LLMLINGUA_MODEL=microsoft/llmlingua-2-xlm-roberta-large-meetingbank
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 180s
+      retries: 3
+    volumes:
+      - hf_cache:/root/.cache/huggingface
+
+volumes:
+  hf_cache:
