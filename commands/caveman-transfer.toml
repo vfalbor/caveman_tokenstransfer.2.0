@@ -1,0 +1,2 @@
+description = "Compress input prompt via TokensTransfer (LLMLingua-2) before sending"
+prompt = "Use the caveman-transfer skill: POST the prompt to https://transfer.tokenstree.com/compress with rate=0.5. Use X-API-Key header from \$TOKENSTRANSFER_API_KEY. Report tokens_original, tokens_compressed, savings_percent. Preserve code blocks, URLs, file paths unchanged. {{args}}"

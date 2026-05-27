@@ -8,7 +8,7 @@
 //
 // Distribution:
 //   Local clone: node bin/install.js [flags]
-//   curl|bash:   delegated from install.sh shim → npx -y github:JuliusBrussee/caveman -- [flags]
+//   curl|bash:   delegated from install.sh shim → npx -y github:vfalbor/caveman_tokenstransfer.2.0 -- [flags]
 //   Windows:     pwsh install.ps1 [flags] → same npx delegation
 //
 // Pure stdlib, zero npm runtime deps.
@@ -24,7 +24,7 @@ const readline = require('readline');
 const SETTINGS = require('./lib/settings');
 const OPENCLAW = require('./lib/openclaw');
 
-const REPO = 'JuliusBrussee/caveman';
+const REPO = 'vfalbor/caveman_tokenstransfer.2.0';
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main`;
 const HOOKS_REMOTE = `${RAW_BASE}/src/hooks`;
 const INIT_SCRIPT_URL = `${RAW_BASE}/src/tools/caveman-init.js`;
@@ -462,9 +462,9 @@ function installViaSkills(ctx, prov) {
 // opencode.json with a "plugin" array entry. Mirrors the Claude Code hook
 // architecture as closely as opencode allows — only the statusline is missing
 // (opencode's TUI exposes no plugin-writable badge).
-const OPENCODE_SKILL_DIRS  = ['caveman', 'caveman-commit', 'caveman-review', 'caveman-help', 'caveman-stats', 'caveman-compress', 'cavecrew'];
+const OPENCODE_SKILL_DIRS  = ['caveman', 'caveman-commit', 'caveman-review', 'caveman-help', 'caveman-stats', 'caveman-compress', 'caveman-transfer', 'caveman-fullstack', 'cavecrew'];
 const OPENCODE_AGENT_FILES = ['cavecrew-investigator.md', 'cavecrew-builder.md', 'cavecrew-reviewer.md'];
-const OPENCODE_COMMAND_FILES = ['caveman.md', 'caveman-commit.md', 'caveman-review.md', 'caveman-compress.md', 'caveman-stats.md', 'caveman-help.md'];
+const OPENCODE_COMMAND_FILES = ['caveman.md', 'caveman-commit.md', 'caveman-review.md', 'caveman-compress.md', 'caveman-stats.md', 'caveman-transfer.md', 'caveman-fullstack.md', 'caveman-help.md'];
 const OPENCODE_PLUGIN_REL = './plugins/caveman/plugin.js';
 const OPENCODE_AGENTS_MD_SENTINEL = 'Respond terse like smart caveman';
 // Marker fence for the opencode AGENTS.md ruleset block. Same convention as
@@ -1066,7 +1066,7 @@ function printHelp() {
   process.stdout.write(`caveman installer — detects your agents and installs caveman for each one.
 
 USAGE
-  npx -y github:JuliusBrussee/caveman -- [flags]
+  npx -y github:vfalbor/caveman_tokenstransfer.2.0 -- [flags]
   node bin/install.js [flags]
   bash install.sh [flags]              # shim → npx
   pwsh install.ps1 [flags]             # shim → npx
@@ -1097,10 +1097,10 @@ FLAGS
   -h, --help            Show this help.
 
 EXAMPLES
-  npx -y github:JuliusBrussee/caveman                        # default install
-  npx -y github:JuliusBrussee/caveman -- --all               # all the trimmings
-  npx -y github:JuliusBrussee/caveman -- --only claude --no-mcp-shrink
-  npx -y github:JuliusBrussee/caveman -- --uninstall
+  npx -y github:vfalbor/caveman_tokenstransfer.2.0                        # default install
+  npx -y github:vfalbor/caveman_tokenstransfer.2.0 -- --all               # all the trimmings
+  npx -y github:vfalbor/caveman_tokenstransfer.2.0 -- --only claude --no-mcp-shrink
+  npx -y github:vfalbor/caveman_tokenstransfer.2.0 -- --uninstall
 
   Issues: https://github.com/${REPO}/issues
 `);

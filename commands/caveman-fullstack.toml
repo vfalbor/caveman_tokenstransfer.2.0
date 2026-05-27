@@ -1,0 +1,2 @@
+description = "End-to-end token compression: caveman-transfer (input) + caveman dialect (output)"
+prompt = "Activate caveman-fullstack: 1) compress input via transfer.tokenstree.com (rate=0.5), 2) respond in caveman dialect (drop articles, fillers, fragments OK, technical terms exact, code unchanged). Report estimated savings. {{args}}"

@@ -1,0 +1,633 @@
+{
+  "meta": {
+    "timestamp": "2026-05-27 16:30:28 UTC",
+    "tokenizer": "cl100k_base",
+    "transfer_rate": 0.5,
+    "caveman_output_reduction_used": 0.65,
+    "price_in_per_M": 1.0,
+    "price_out_per_M": 5.0
+  },
+  "suites": {
+    "coding": [
+      {
+        "id": "coding-1",
+        "input": {
+          "baseline": 20,
+          "transfer": 10,
+          "translation": 20,
+          "caveman_rules": 19
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.00252,
+          "caveman_only": 0.000895,
+          "transfer_only": 0.00251,
+          "fullstack_2_0": 0.000885
+        },
+        "savings_pct": {
+          "caveman_only": 64.5,
+          "transfer_only": 0.4,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-2",
+        "input": {
+          "baseline": 30,
+          "transfer": 14,
+          "translation": 30,
+          "caveman_rules": 28
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.00253,
+          "caveman_only": 0.000905,
+          "transfer_only": 0.002514,
+          "fullstack_2_0": 0.000889
+        },
+        "savings_pct": {
+          "caveman_only": 64.2,
+          "transfer_only": 0.6,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-3",
+        "input": {
+          "baseline": 19,
+          "transfer": 9,
+          "translation": 19,
+          "caveman_rules": 18
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002519,
+          "caveman_only": 0.000894,
+          "transfer_only": 0.002509,
+          "fullstack_2_0": 0.000884
+        },
+        "savings_pct": {
+          "caveman_only": 64.5,
+          "transfer_only": 0.4,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-4",
+        "input": {
+          "baseline": 18,
+          "transfer": 9,
+          "translation": 18,
+          "caveman_rules": 17
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002518,
+          "caveman_only": 0.000893,
+          "transfer_only": 0.002509,
+          "fullstack_2_0": 0.000884
+        },
+        "savings_pct": {
+          "caveman_only": 64.5,
+          "transfer_only": 0.4,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-5",
+        "input": {
+          "baseline": 66,
+          "transfer": 31,
+          "translation": 66,
+          "caveman_rules": 66
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002566,
+          "caveman_only": 0.000941,
+          "transfer_only": 0.002531,
+          "fullstack_2_0": 0.000906
+        },
+        "savings_pct": {
+          "caveman_only": 63.3,
+          "transfer_only": 1.4,
+          "fullstack_2_0": 64.7
+        }
+      },
+      {
+        "id": "coding-6",
+        "input": {
+          "baseline": 25,
+          "transfer": 11,
+          "translation": 25,
+          "caveman_rules": 23
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002525,
+          "caveman_only": 0.0009,
+          "transfer_only": 0.002511,
+          "fullstack_2_0": 0.000886
+        },
+        "savings_pct": {
+          "caveman_only": 64.4,
+          "transfer_only": 0.6,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-7",
+        "input": {
+          "baseline": 42,
+          "transfer": 21,
+          "translation": 42,
+          "caveman_rules": 42
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002542,
+          "caveman_only": 0.000917,
+          "transfer_only": 0.002521,
+          "fullstack_2_0": 0.000896
+        },
+        "savings_pct": {
+          "caveman_only": 63.9,
+          "transfer_only": 0.8,
+          "fullstack_2_0": 64.8
+        }
+      },
+      {
+        "id": "coding-8",
+        "input": {
+          "baseline": 21,
+          "transfer": 10,
+          "translation": 21,
+          "caveman_rules": 18
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002521,
+          "caveman_only": 0.000896,
+          "transfer_only": 0.00251,
+          "fullstack_2_0": 0.000885
+        },
+        "savings_pct": {
+          "caveman_only": 64.5,
+          "transfer_only": 0.4,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-9",
+        "input": {
+          "baseline": 27,
+          "transfer": 13,
+          "translation": 27,
+          "caveman_rules": 25
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002527,
+          "caveman_only": 0.000902,
+          "transfer_only": 0.002513,
+          "fullstack_2_0": 0.000888
+        },
+        "savings_pct": {
+          "caveman_only": 64.3,
+          "transfer_only": 0.6,
+          "fullstack_2_0": 64.9
+        }
+      },
+      {
+        "id": "coding-10",
+        "input": {
+          "baseline": 21,
+          "transfer": 10,
+          "translation": 21,
+          "caveman_rules": 21
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002521,
+          "caveman_only": 0.000896,
+          "transfer_only": 0.00251,
+          "fullstack_2_0": 0.000885
+        },
+        "savings_pct": {
+          "caveman_only": 64.5,
+          "transfer_only": 0.4,
+          "fullstack_2_0": 64.9
+        }
+      }
+    ],
+    "rag": [
+      {
+        "id": "rag-1",
+        "input": {
+          "baseline": 391,
+          "transfer": 211,
+          "translation": 391,
+          "caveman_rules": 370
+        },
+        "output_estimated": {
+          "baseline": 400,
+          "caveman": 140
+        },
+        "cost_per_call": {
+          "baseline": 0.002391,
+          "caveman_only": 0.001091,
+          "transfer_only": 0.002211,
+          "fullstack_2_0": 0.000911
+        },
+        "savings_pct": {
+          "caveman_only": 54.4,
+          "transfer_only": 7.5,
+          "fullstack_2_0": 61.9
+        }
+      },
+      {
+        "id": "rag-2",
+        "input": {
+          "baseline": 388,
+          "transfer": 208,
+          "translation": 388,
+          "caveman_rules": 367
+        },
+        "output_estimated": {
+          "baseline": 400,
+          "caveman": 140
+        },
+        "cost_per_call": {
+          "baseline": 0.002388,
+          "caveman_only": 0.001088,
+          "transfer_only": 0.002208,
+          "fullstack_2_0": 0.000908
+        },
+        "savings_pct": {
+          "caveman_only": 54.4,
+          "transfer_only": 7.5,
+          "fullstack_2_0": 62.0
+        }
+      },
+      {
+        "id": "rag-3",
+        "input": {
+          "baseline": 392,
+          "transfer": 209,
+          "translation": 392,
+          "caveman_rules": 371
+        },
+        "output_estimated": {
+          "baseline": 400,
+          "caveman": 140
+        },
+        "cost_per_call": {
+          "baseline": 0.002392,
+          "caveman_only": 0.001092,
+          "transfer_only": 0.002209,
+          "fullstack_2_0": 0.000909
+        },
+        "savings_pct": {
+          "caveman_only": 54.3,
+          "transfer_only": 7.7,
+          "fullstack_2_0": 62.0
+        }
+      },
+      {
+        "id": "rag-4",
+        "input": {
+          "baseline": 390,
+          "transfer": 209,
+          "translation": 390,
+          "caveman_rules": 368
+        },
+        "output_estimated": {
+          "baseline": 400,
+          "caveman": 140
+        },
+        "cost_per_call": {
+          "baseline": 0.00239,
+          "caveman_only": 0.00109,
+          "transfer_only": 0.002209,
+          "fullstack_2_0": 0.000909
+        },
+        "savings_pct": {
+          "caveman_only": 54.4,
+          "transfer_only": 7.6,
+          "fullstack_2_0": 62.0
+        }
+      },
+      {
+        "id": "rag-5",
+        "input": {
+          "baseline": 385,
+          "transfer": 205,
+          "translation": 385,
+          "caveman_rules": 363
+        },
+        "output_estimated": {
+          "baseline": 400,
+          "caveman": 140
+        },
+        "cost_per_call": {
+          "baseline": 0.002385,
+          "caveman_only": 0.001085,
+          "transfer_only": 0.002205,
+          "fullstack_2_0": 0.000905
+        },
+        "savings_pct": {
+          "caveman_only": 54.5,
+          "transfer_only": 7.5,
+          "fullstack_2_0": 62.1
+        }
+      }
+    ],
+    "agent": [
+      {
+        "id": "agent-1",
+        "input": {
+          "baseline": 312,
+          "transfer": 145,
+          "translation": 312,
+          "caveman_rules": 301
+        },
+        "output_estimated": {
+          "baseline": 300,
+          "caveman": 105
+        },
+        "cost_per_call": {
+          "baseline": 0.001812,
+          "caveman_only": 0.000837,
+          "transfer_only": 0.001645,
+          "fullstack_2_0": 0.00067
+        },
+        "savings_pct": {
+          "caveman_only": 53.8,
+          "transfer_only": 9.2,
+          "fullstack_2_0": 63.0
+        }
+      },
+      {
+        "id": "agent-2",
+        "input": {
+          "baseline": 317,
+          "transfer": 150,
+          "translation": 317,
+          "caveman_rules": 307
+        },
+        "output_estimated": {
+          "baseline": 300,
+          "caveman": 105
+        },
+        "cost_per_call": {
+          "baseline": 0.001817,
+          "caveman_only": 0.000842,
+          "transfer_only": 0.00165,
+          "fullstack_2_0": 0.000675
+        },
+        "savings_pct": {
+          "caveman_only": 53.7,
+          "transfer_only": 9.2,
+          "fullstack_2_0": 62.9
+        }
+      },
+      {
+        "id": "agent-3",
+        "input": {
+          "baseline": 311,
+          "transfer": 146,
+          "translation": 311,
+          "caveman_rules": 301
+        },
+        "output_estimated": {
+          "baseline": 300,
+          "caveman": 105
+        },
+        "cost_per_call": {
+          "baseline": 0.001811,
+          "caveman_only": 0.000836,
+          "transfer_only": 0.001646,
+          "fullstack_2_0": 0.000671
+        },
+        "savings_pct": {
+          "caveman_only": 53.8,
+          "transfer_only": 9.1,
+          "fullstack_2_0": 62.9
+        }
+      },
+      {
+        "id": "agent-4",
+        "input": {
+          "baseline": 314,
+          "transfer": 148,
+          "translation": 314,
+          "caveman_rules": 304
+        },
+        "output_estimated": {
+          "baseline": 300,
+          "caveman": 105
+        },
+        "cost_per_call": {
+          "baseline": 0.001814,
+          "caveman_only": 0.000839,
+          "transfer_only": 0.001648,
+          "fullstack_2_0": 0.000673
+        },
+        "savings_pct": {
+          "caveman_only": 53.7,
+          "transfer_only": 9.2,
+          "fullstack_2_0": 62.9
+        }
+      },
+      {
+        "id": "agent-5",
+        "input": {
+          "baseline": 315,
+          "transfer": 148,
+          "translation": 315,
+          "caveman_rules": 304
+        },
+        "output_estimated": {
+          "baseline": 300,
+          "caveman": 105
+        },
+        "cost_per_call": {
+          "baseline": 0.001815,
+          "caveman_only": 0.00084,
+          "transfer_only": 0.001648,
+          "fullstack_2_0": 0.000673
+        },
+        "savings_pct": {
+          "caveman_only": 53.7,
+          "transfer_only": 9.2,
+          "fullstack_2_0": 62.9
+        }
+      }
+    ],
+    "multilingual": [
+      {
+        "id": "multilingual-1",
+        "input": {
+          "baseline": 27,
+          "transfer": 14,
+          "translation": 22,
+          "caveman_rules": 27
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002527,
+          "caveman_only": 0.000902,
+          "transfer_only": 0.002514,
+          "fullstack_2_0": 0.000889
+        },
+        "savings_pct": {
+          "caveman_only": 64.3,
+          "transfer_only": 0.5,
+          "fullstack_2_0": 64.8
+        }
+      },
+      {
+        "id": "multilingual-2",
+        "input": {
+          "baseline": 31,
+          "transfer": 16,
+          "translation": 22,
+          "caveman_rules": 31
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002531,
+          "caveman_only": 0.000906,
+          "transfer_only": 0.002516,
+          "fullstack_2_0": 0.000891
+        },
+        "savings_pct": {
+          "caveman_only": 64.2,
+          "transfer_only": 0.6,
+          "fullstack_2_0": 64.8
+        }
+      },
+      {
+        "id": "multilingual-3",
+        "input": {
+          "baseline": 34,
+          "transfer": 19,
+          "translation": 19,
+          "caveman_rules": 34
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002534,
+          "caveman_only": 0.000909,
+          "transfer_only": 0.002519,
+          "fullstack_2_0": 0.000894
+        },
+        "savings_pct": {
+          "caveman_only": 64.1,
+          "transfer_only": 0.6,
+          "fullstack_2_0": 64.7
+        }
+      },
+      {
+        "id": "multilingual-4",
+        "input": {
+          "baseline": 39,
+          "transfer": 21,
+          "translation": 26,
+          "caveman_rules": 38
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002539,
+          "caveman_only": 0.000914,
+          "transfer_only": 0.002521,
+          "fullstack_2_0": 0.000896
+        },
+        "savings_pct": {
+          "caveman_only": 64.0,
+          "transfer_only": 0.7,
+          "fullstack_2_0": 64.7
+        }
+      },
+      {
+        "id": "multilingual-5",
+        "input": {
+          "baseline": 24,
+          "transfer": 11,
+          "translation": 19,
+          "caveman_rules": 24
+        },
+        "output_estimated": {
+          "baseline": 500,
+          "caveman": 175
+        },
+        "cost_per_call": {
+          "baseline": 0.002524,
+          "caveman_only": 0.000899,
+          "transfer_only": 0.002511,
+          "fullstack_2_0": 0.000886
+        },
+        "savings_pct": {
+          "caveman_only": 64.4,
+          "transfer_only": 0.5,
+          "fullstack_2_0": 64.9
+        }
+      }
+    ]
+  },
+  "fullstack_summary": {
+    "n_prompts": 25,
+    "avg_savings_pct": {
+      "caveman_only": 60.2,
+      "transfer_only": 3.7,
+      "fullstack_2_0": 63.9
+    },
+    "median_savings_pct": {
+      "caveman_only": 64.0,
+      "transfer_only": 0.7,
+      "fullstack_2_0": 64.7
+    }
+  }
+}
