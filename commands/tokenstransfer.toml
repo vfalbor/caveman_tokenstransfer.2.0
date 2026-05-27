@@ -1,0 +1,2 @@
+description = "Compress input prompt with LLMLingua-2 (runs 100% local if installed, else hosted API)"
+prompt = "Use the tokenstransfer skill. Compress the user input/prompt with LLMLingua-2 at rate=0.5. Try local mode first (in-process llmlingua), fall back to https://transfer.tokenstree.com/compress only if llmlingua/torch not installed. Preserve code blocks, URLs, file paths, markdown headings exactly. Report tokens_original, tokens_compressed, savings_percent, mode (local|api). {{args}}"

@@ -1,0 +1,2 @@
+description = "Translate non-English prompt to English (cheapest BPE tokens) before sending to Claude"
+prompt = "Use the tokenstranslation skill. Detect source language. If non-English, POST to https://translation.tokenstree.com/translate/in with X-API-Key from \$TOKENTRANSLATION_API_KEY. Get optimized_text in English. Report tokens_original, tokens_final, source_lang, savings_percent. Translate the model's response back to source_lang via /translate/out if user prefers. {{args}}"
